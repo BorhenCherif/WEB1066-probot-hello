@@ -10,6 +10,7 @@ install:
 
 script:
   - docker run --rm probot-hello npm run test
+  - docker run --rm probot-hello -p 3000:3000 npm start
   - docker run --rm probot-hello npm run lint
 
 after_success:
