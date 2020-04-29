@@ -23,7 +23,7 @@ jobs:
       name: "TEST 8-jessie"
       install: skip
       script:
-        - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
+        - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD)
       env:
         - NODE_VERSION=8-jessie
         - NPM_TARGET=test
@@ -31,7 +31,7 @@ jobs:
       name: "TEST 8-jessie"
       install: skip
       script:
-        - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
+        - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD)
       env:
         - NODE_VERSION=8-jessie
         - NPM_TARGET=lint
@@ -39,7 +39,7 @@ jobs:
       name: "TEST 8-jessie"
       install: skip
       script:
-        - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
+        - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) 
       env:
         - NODE_VERSION=8-jessie
         - NPM_TARGET=coverage
